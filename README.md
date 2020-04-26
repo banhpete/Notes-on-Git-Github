@@ -17,3 +17,5 @@ For example, say we have some file or some set of files, and we make changes and
 ## Centralized VCS (CVCS) vs Decentralized VCS (DCVS)
 Git is a CVS and SVN is a DCVS. Essentially, CVCS requires network access at all times to use because you're using a central repository on a central server. DCVS on the other hand, you are working on a repository locally, and when you have network access, your local repository will be uploaded to a central server (Github).
 
+## Important Commands in Git
+Probably one of the best command for a new person to remember when using GIT is "git help". This will show you all the commands you can use and even detail them. " help" Can even be appended to the end of another git command, and it will detail how to use the command and what additional options you can add to it. For example, if I wanted to know more about git log, I would write in the cmd window "git log help".
