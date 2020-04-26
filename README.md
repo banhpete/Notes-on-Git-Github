@@ -28,6 +28,11 @@ Don't forget that when we commit, a message is always required. If we don't incl
 ## Atomic Commits
 Consider making all the changes in a commit related to each other, that why we easier describe the message and it makes sense. Also, it will be easier to make specific changes to the central repository, it only needs to commit to one type of change not all a bunch of them, this is useful, especially if they several other commits are not desirable.
 
+## Git Ignore
+If we wanted to ignore certain changes to our repository all we have to do is create a ".gitignore" file which have the names of the files we want to ignore. This files accepts regular expression as a mean of telling Git what type of files to ignore.
+
+Going a step further, say we want to ignore a file that we tracked. Why would we want to do this? For example, we may just want to include the file initially in the repository but any changes after should not be tracked. Well all we do is include it in the ".gitignore" file of course but also remove it from the staging index by writing "git rm --cached 'filename'". Because it's a tracked file, Git will still want to track it despite being ignored, however we just tell Git to remove it from the staging area, it will never show up again.
+
 ## Important Commands in Git
 Somse useful commands to remember in Git is:
 - git help
@@ -36,4 +41,8 @@ Somse useful commands to remember in Git is:
   - Shows the changes made in the file that were commited before. Git compares the new file with the old file. 
   - Keep in mind that when you add a file to the staging index, the changes won't show in "git diff". You'll need to write "git diff  --staged". 
   - You can compare two different version by doing "git diff commit#...commit#2....
+  - git diff by itself shows all the changes. If you're looking for a changes in a specfic file, then append the name of the file at the end.
   
+## Another Important Notes
+- Remember that files that start with "." do not show up in the folders, but it is there
+  - These files can be used to track empty directories which are not tracked in Git. Add some "." file to tell git, "Hey, I'm not empty, track me!".
