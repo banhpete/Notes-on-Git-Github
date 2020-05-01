@@ -50,6 +50,9 @@ Somse useful commands to remember in Git is:
   - This shows your revision
   - In Git you can access ancestors of a revision by using ^. For example HEAD^ means "Show me what came before HEAD"
   - You can combine multiple '^' to find the parent, grandparent, great grandparent, etc. of a revision
+- git log
+  - Show all the revisions and their messages
+  - If you look at the help page we can filter append a lot to this command to filter the git revisions
   
 ## Another Important Note
 - Remember that files that start with "." do not show up in the folders, but it is there
