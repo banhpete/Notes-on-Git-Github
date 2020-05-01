@@ -33,6 +33,9 @@ If we wanted to ignore certain changes to our repository all we have to do is cr
 
 Going a step further, say we want to ignore a file that we tracked. Why would we want to do this? For example, we may just want to include the file initially in the repository but any changes after should not be tracked. Well all we do is include it in the ".gitignore" file of course but also remove it from the staging index by writing "git rm --cached 'filename'". Because it's a tracked file, Git will still want to track it despite being ignored, however we just tell Git to remove it from the staging area, it will never show up again.
 
+## Tree Listing
+Another neat thing about Git is that you can use it to not only show the revision comment or the changes in a file, but you can also see how the directory (also called a tree because it can branch off to other files or folders) looked in that revision. To do so, we use "Git ls-tree [Git Revision Here]". To go even further, we can look into one of the folders by writing "Git ls-tree [Git Revision Here] [Folder Name/].
+
 ## Important Commands in Git
 Somse useful commands to remember in Git is:
 - git help
@@ -42,7 +45,12 @@ Somse useful commands to remember in Git is:
   - Keep in mind that when you add a file to the staging index, the changes won't show in "git diff". You'll need to write "git diff  --staged". 
   - You can compare two different version by doing "git diff commit#...commit#2....
   - git diff by itself shows all the changes. If you're looking for a changes in a specfic file, then append the name of the file at the end.
+- git show
+  - This is followed by HEAD or the HASH code.
+  - This shows your revision
+  - In Git you can access ancestors of a revision by using ^. For example HEAD^ means "Show me what came before HEAD"
+  - You can combine multiple '^' to find the parent, grandparent, great grandparent, etc. of a revision
   
-## Another Important Notes
+## Another Important Note
 - Remember that files that start with "." do not show up in the folders, but it is there
   - These files can be used to track empty directories which are not tracked in Git. Add some "." file to tell git, "Hey, I'm not empty, track me!".
