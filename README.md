@@ -39,6 +39,16 @@ Another neat thing about Git is that you can use it to not only show the revisio
 ## Resets in Git
 We can actually roll back changes in Git using the "git reset" commands. You can specify what type of reset you want, there are 3 options, soft, mixed and hard. What it does is that it will take you to a previous Git revision, where you can recommit and remove any of the newer commits you made after the revision that you are now on. So keep in mind, commits in Git are not permenant, they can be removed using "Git Reset". 
 
+## Merges
+There are two types of merges, fast-forward merge and a true merge.
+
+Fast-forward merge is when you merge a branch to the master and it's essentially an extension of master branch. The branch can easily be merged to the master as the master does not have its own commits. A true merge is the opposite of the fast-forward merge.
+
+With true merges, you may have merge conflicts, this is where you have two branches, and both branches have different changes to one line. For the branches to merge, you will need to resolve the merge, there are tools to do resolve the merge, but you can do it manually. This just involves changing the code to the version you want. To reduce merge conflicts try to have the master merge with the branch often or have the branch merge with the master.
+
+## Stashes
+We can stash changes to commit later on or used on another branch. To do so, after we make a change, and we use the command "git stash save <file name>"
+
 ## Additional Important Commands in Git
 Somse useful commands to remember in Git is:
 - git help
