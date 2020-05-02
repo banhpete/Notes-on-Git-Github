@@ -36,14 +36,17 @@ Going a step further, say we want to ignore a file that we tracked. Why would we
 ## Tree Listing
 Another neat thing about Git is that you can use it to not only show the revision comment or the changes in a file, but you can also see how the directory (also called a tree because it can branch off to other files or folders) looked in that revision. To do so, we use "Git ls-tree [Git Revision Here]". To go even further, we can look into one of the folders by writing "Git ls-tree [Git Revision Here] [Folder Name/].
 
-## Important Commands in Git
+## Resets in Git
+We can actually roll back changes in Git using the "git reset" commands. You can specify what type of reset you want, there are 3 options, soft, mixed and hard. What it does is that it will take you to a previous Git revision, where you can recommit and remove any of the newer commits you made after the revision that you are now on. So keep in mind, commits in Git are not permenant, they can be removed using "Git Reset". 
+
+## Additional Important Commands in Git
 Somse useful commands to remember in Git is:
 - git help
   - This will show you all the git commands you can use and even detail them. Git commands appended to "git help" will provide you more details on the command. For example, if I wanted to know more about git log, I would write in the cmd window "git help log".
 - git diff
   - Shows the changes made in the file that were commited before. Git compares the new file with the old file. 
   - Keep in mind that when you add a file to the staging index, the changes won't show in "git diff". You'll need to write "git diff  --staged". 
-  - You can compare two different version by doing "git diff commit#...commit#2....
+  - You can compare two different version by doing "git diff commit#...commit#2.... This also works with branches.
   - git diff by itself shows all the changes. If you're looking for a changes in a specfic file, then append the name of the file at the end.
 - git show
   - This is followed by HEAD or the HASH code.
