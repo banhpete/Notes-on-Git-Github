@@ -48,6 +48,21 @@ With true merges, you may have merge conflicts, this is where you have two branc
 
 ## Stashes
 We can stash changes to commit later on or used on another branch. To do so, after we make a change, and we use the command "git stash save <file name>"
+  
+## Remote Repositories and Branches
+To collaborate with others, we use a remote repository, a repository we store online on remote servers such as Github.
+
+### Adding A Remote Repository onto your Git
+To link your repository to a remote repository on git hub we use the command "git remote add origin <url>". The "origin" in the command is just the name, this can be anything. When you do this, your local repository is linked to this remote repository, but that's it. We haven't uploaded anything or cloned anything.
+  
+### Create a remote branch
+To move one of the branches up into Github, we use the command "git push -u origin <branch name>". This will ask for a username and password. The "-u" is to make the branch a tracking branch, this is the branch that will try to stay as close as possible to branch to the one on the remote repository. This is also the branch that we will now be pushing changes to before we push to the remote repository.
+  
+### To clone a remote repositroy
+We need to click the "Clone" button in github, grab the url, and then open the folder you want to have the repository and then in git, write "git clone <url>".
+
+### Track remote branches
+Tracking the remote branches, means to have a branch in sync with the master as much as possible so it doesn't diverge too far (we're avoid having lots of merge conflicts).
 
 ## Additional Important Commands in Git
 Somse useful commands to remember in Git is:
