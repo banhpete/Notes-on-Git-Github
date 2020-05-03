@@ -67,6 +67,9 @@ Tracking the remote branches, means to have a branch in sync with the master as 
 ### Fetching Branches
 When you fetch from the remote server keep in mind that it does not merge anything with your current branches. It changes your tracking branch however.
 
+## Bashrc
+This file runs automatically anytime a Git Bash Windows opens. We can add code to this file by writing in the promopt "nano .bashrc" to run scripts and modify our Git Bash Window.
+
 ## Additional Important Commands in Git
 Somse useful commands to remember in Git is:
 - git help
