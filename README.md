@@ -1,5 +1,5 @@
-# Understand-Git-GitHub
-Just some notes on Git/GitHub based on https://www.ajonit.com/git/what-is-git/
+# Studying Git & Github
+Just some notes on Git/GitHub based on https://www.ajonit.com/git/what-is-git/ & Kevin Skoglund's course on using Git/Github on Lynda.
 
 ## What is Git?
 A Version Control System (VCS) for tracking changes in a set of file. All we need to do is think about several people editting one word document and we can see where the need for a VCS arises from. 
