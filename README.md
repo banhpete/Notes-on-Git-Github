@@ -64,8 +64,16 @@ We need to click the "Clone" button in github, grab the url, and then open the f
 ### Track remote branches
 Tracking the remote branches, means to have a branch in sync with the master as much as possible so it doesn't diverge too far (we're avoid having lots of merge conflicts).
 
-### Fetching Branches
+### Fetching Branches vs Pulling
 When you fetch from the remote server keep in mind that it does not merge anything with your current branches. It changes your tracking branch however.
+
+When you pull from the remote server, it merges with your current branch.
+
+### Pushing vs Pulling
+These two commands are crucial when working with remote repositories. When you want to have the latest version from the remote, you call 'Pull'. To use this command we write "git pull <remote branch> <branch you want to merge>" -it's like what we're saying pull the remote branch from the remote repository and bring it to our local branch. When we want to upload our local repository to the remote one, we use 'Push'. To use this command we write "git push <remote branch> <branch you want to push>".   
+  Essentially one way too think of this all is that the remote repository is on a hill, and our local repository is on the ground level. To bring the remote repository down, I pull it down. To bring my local repository up, I push it up.  
+  Keep in mind, you cannot push anything onto the remote repository if there have been changes that your local repository has not yet merged. Therefore you will have to pull first. Alternatively, we can just fetch first and then merge after.
+
 
 ## Bashrc & Bash_Profile
 This file runs automatically anytime a Git Bash Windows opens. We can add code to this file by writing in the promopt "nano .bashrc" to run scripts and modify our Git Bash Window. 
