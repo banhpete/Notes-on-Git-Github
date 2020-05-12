@@ -1,5 +1,5 @@
 # Studying Git & Github
-Just some notes on Git/GitHub based on https://www.ajonit.com/git/what-is-git/ & Kevin Skoglund's course on using Git/Github on Lynda.
+Just some notes on Git/GitHub based on https://www.ajonit.com/git/what-is-git/ & Kevin Skoglund's course on using Git/Github on Lynda. By no means is this a compehrensive guide on Git/Github or my entire understanding of Git/Github. This is just my attempt to study certain concepts of Git/Github, and to provide myself with notes for future references.
 
 ## What is Git?
 A Version Control System (VCS) for tracking changes in a set of file. All we need to do is think about several people editting one word document and we can see where the need for a VCS arises from. 
@@ -67,8 +67,10 @@ Tracking the remote branches, means to have a branch in sync with the master as 
 ### Fetching Branches
 When you fetch from the remote server keep in mind that it does not merge anything with your current branches. It changes your tracking branch however.
 
-## Bashrc
-This file runs automatically anytime a Git Bash Windows opens. We can add code to this file by writing in the promopt "nano .bashrc" to run scripts and modify our Git Bash Window.
+## Bashrc & Bash_Profile
+This file runs automatically anytime a Git Bash Windows opens. We can add code to this file by writing in the promopt "nano .bashrc" to run scripts and modify our Git Bash Window. 
+
+The difference between these two can be found here: https://medium.com/@kingnand.90/what-is-the-difference-between-bash-profile-and-bashrc-d4c902ac7308. However the point is, these two files are run when the Git Bash Window is opened. To avoid worrying about which is being used, we have the bash_profile call out bashrc, see https://medium.com/@abhinavkorpal/bash-profile-vs-bashrc-c52534a787d3.
 
 ## Additional Important Commands in Git
 Somse useful commands to remember in Git is:
